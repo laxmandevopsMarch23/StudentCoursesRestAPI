@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'UBUBTU-ID' }
+    agent { label 'UBUNTU-ID' }
     triggers { 
         pollSCM('* * * * *')
     }
@@ -7,7 +7,7 @@ pipeline {
         stage('vcs') {
             steps {
                 git url: 'https://github.com/laxmandevopsMarch23/StudentCoursesRestAPI.git',
-                    branch: 'develop'
+                    branch: 'release-1'
             }
         }
         stage('build') {
