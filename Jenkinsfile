@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'UBUBTU-ID' }
+    agent { label 'UBUNTU-ID' }
     triggers { 
         pollSCM('* * * * *')
     }
